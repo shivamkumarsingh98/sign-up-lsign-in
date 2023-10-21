@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="page">
+        <div class="secone">
+            <img src="3644996 1.jpg" id="sydeimage">
+        </div>
+        <div class="sectwo">
+            <h1 id="heading">Sign in</h1>
+            <p class="heading">If you <span id="already">don’t have an</span> account register</p><br />
+            <p class="heading">You can <span id="register"> Register here !</span></p>
+            <br /><br />
+
+
+
+            <form name="myForm" onsubmit="return validateForm(event)" method="post">
+                <p>Email</p>
+                <div class="input-container first-container">
+                    <i class="fa-regular fa-envelope" ></i>
+                    <input type="text" placeholder="Enter your email address" name="email" class="input-box "><br />
+
+                </div>
+                <p class="error" id="emailError"></p><br />
+
+                <div style="display: none;" id="hiddentwo">
+                    <p>Username</p>
+                    <div class="input-container">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Enter your Username" name="username"  class="input-box ">
+                    </div>
+                    <p class="error" id="usernamerror"></p><br />
+                </div>
+
+                <p>Password</p>
+                <div class="input-container">
+                    <label><i class="fa-solid fa-lock" class="icon"></i></label>
+                    <input type="password" placeholder="Enter your Password" name="userpassword"  id="password" class="input-box">
+                    <i class="fa-regular fa-eye-slash" id="eye1"></i>
+                </div>
+                <p class="error" id="passworderror"></p><br />
+
+                <div style="display: none;" id="hiddenone">
+                    <p>Confirm Password</p>
+                    <div class="input-container">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Confirm your Password" name="confirmPassword"
+                            class="input-box" id="confrom">
+                            <i class="fa-regular fa-eye-slash" id ="eye2"></i>
+                    </div>
+                    <p class="error" id="confirmPasswordError"></p><br />
+                </div>
+                <label id="checkbox"><input type="checkbox" placeholder="Rememebr me"> Rememebr me</label><label id="forget" class="Forget">Forgot
+                    Password ?</label>
+                <br />
+
+                <button type="submit" id="btn">Register</button>
+            </form>
+            <footer>
+                <span class="continue" id="otherlogin">or continue with</span>
+                <div class="socialmedia">
+                    <div id="facebook" style='display: block;'><img src="Facebook.jpg" /></div>
+                    <div id="Apple" style='display: block;'><img src="./assat/apple.jpg" /></div>
+                    <div id="Google" style='display: block;'><img src="./assat/google.jpg" /></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
